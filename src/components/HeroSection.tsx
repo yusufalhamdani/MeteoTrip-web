@@ -1,6 +1,6 @@
-import { motion } from 'motion/react';
-import { Cloud, CloudRain, Sun } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { motion } from "motion/react";
+import { Cloud, CloudRain, Sun } from "lucide-react";
+import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 interface HeroSectionProps {
   onExplore: () => void;
@@ -70,28 +70,12 @@ export function HeroSection({ onExplore }: HeroSectionProps) {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[600px] flex items-center">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-3xl"
-        >
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-white mb-6"
-            style={{ fontFamily: 'Poppins, sans-serif' }}
-          >
+        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-3xl">
+          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="text-white mb-6" style={{ fontFamily: "Poppins, sans-serif" }}>
             Plan Your Trip Smarter with Weather Insights
           </motion.h1>
-          
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-white/90 text-xl mb-8 max-w-2xl"
-          >
+
+          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.4 }} className="text-white/90 text-xl mb-8 max-w-2xl">
             Jelajahi Bandung dengan panduan cuaca terpercaya. Temukan destinasi wisata terbaik berdasarkan kondisi meteorologi real-time dan prediksi akurat.
           </motion.p>
 
@@ -101,18 +85,13 @@ export function HeroSection({ onExplore }: HeroSectionProps) {
             transition={{ duration: 0.8, delay: 0.6 }}
             onClick={onExplore}
             className="bg-gradient-to-r from-[#72BDFD] to-[#2E80FF] text-white px-8 py-4 rounded-lg hover:shadow-2xl hover:shadow-[#72BDFD]/50 transition-all duration-300 transform hover:scale-105"
-            style={{ fontFamily: 'Poppins, sans-serif' }}
+            style={{ fontFamily: "Poppins, sans-serif" }}
           >
-            Explore MeteoTrip
+            Explore MeteoTripppp
           </motion.button>
 
           {/* Weather Stats Quick View */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="mt-12 grid grid-cols-3 gap-6 max-w-xl"
-          >
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.8 }} className="mt-12 grid grid-cols-3 gap-6 max-w-xl">
             <div className="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
               <div className="text-[#72BDFD] text-2xl mb-1">25°C</div>
               <div className="text-white/80 text-sm">Suhu Rata-rata</div>
