@@ -87,7 +87,7 @@ export function HeroSection({ onExplore }: HeroSectionProps) {
             className="bg-gradient-to-r from-[#72BDFD] to-[#2E80FF] text-white px-8 py-4 rounded-lg hover:shadow-2xl hover:shadow-[#72BDFD]/50 transition-all duration-300 transform hover:scale-105"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
-            Explore MeteoTrip
+            Explore MeteoTripppp
           </motion.button>
 
           {/* Weather Stats Quick View */}
